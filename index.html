@@ -4,82 +4,368 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/test-repo-vanilla-app/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Vyshyvanka Vibes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/test-repo-vanilla-app/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/test-repo-vanilla-app/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/test-repo-vanilla-app/assets/index-0e525d46.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/test-repo-vanilla-app/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <header class="header-section">
+  <div class="header-container container">
+    <nav class="header-nav">
+      <a class="header-logo-link" href="../index.html">
+        <img
+          class="header-logo"
+          src="../public/favicon.svg"
+          alt="logo image"
+          width="44"
+          height="39"
+        />
+      </a>
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item">
+          <a href="#about" class="header-nav-link">about us</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="header-nav-list-item">
+          <a href="#collection" class="header-nav-link">our collection </a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#order" class="header-nav-link">customer order</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a href="#testimonials" class="header-nav-link">testimonials</a>
         </li>
       </ul>
+    </nav>
+    <div class="header-contacts">
+      <address class="header-contact-phone">
+        <a class="header-contact-phone-link" href="tel:+380684439426"
+          >+380 (68) 443-94-26</a
+        >
+      </address>
+      <ul class="header-contacts-icon-list">
+        <li class="header-contacts-icon-list-item">
+          <a
+            class="header-contacts-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+          >
+            <svg class="header-soc-icon" height="28" width="28">
+              <use href="../images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-contacts-icon-list-item">
+          <a
+            class="header-contacts-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+          >
+            <svg class="header-soc-icon" height="28" width="28">
+              <use href="../images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-contacts-icon-list-item">
+          <a
+            class="header-contacts-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+          >
+            <svg class="header-soc-icon" height="28" width="28">
+              <use href="../images/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button class="header-menu-btn" type="button">
+        <svg
+          class="header-menu-btn-icon"
+          width="36"
+          height="24"
+          aria-label="menu button icon"
+        >
+          <use href="../images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/test-repo-vanilla-app/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <!--  -->
+    <main>
+      
+      
+      <section class="collection-section" id="collection">
+  <div class="collection-container container">
+    <h2 class="collection-header">Our collection</h2>
+    <ul class="collection-list">
+      <li class="collection-list-item">
+        <div class="product-card">
+          <picture class="product-image">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../images/collection-01-desktop-1440.webp    1x,
+                ../images/collection-01-desktop-1440@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../images/collection-01-desktop-1280.webp    1x,
+                ../images/collection-01-desktop-1280@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../images/collection-01-tablet.webp    1x,
+                ../images/collection-01-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../images/collection-01-mobil.webp    1x,
+                ../images/collection-01-mobil@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="../images/collection-01-mobil.webp" alt="product image" />
+          </picture>
+        </div>
+        <p class="product">august poltava women's blousering</p>
+        <p class="price">3300 UAH</p>
+      </li>
+      <li class="collection-list-item">
+        <div class="product-card">
+          <picture class="product-image">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../images/collection-02-desktop-1440.webp    1x,
+                ../images/collection-02-desktop-1440@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../images/collection-02-desktop-1280.webp    1x,
+                ../images/collection-02-desktop-1280@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../images/collection-02-tablet.webp    1x,
+                ../images/collection-02-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../images/collection-02-mobil.webp    1x,
+                ../images/collection-02-mobil@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="../images/collection-02-mobil.webp" alt="product image" />
+          </picture>
+        </div>
+        <p class="product">Women's blouse Gorgany</p>
+        <p class="price">3350 UAH</p>
+      </li>
+      <li class="collection-list-item">
+        <div class="product-card">
+          <picture class="product-image">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../images/collection-03-desktop-1440.webp    1x,
+                ../images/collection-03-desktop-1440@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../images/collection-03-desktop-1280.webp    1x,
+                ../images/collection-03-desktop-1280@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../images/collection-03-tablet.webp    1x,
+                ../images/collection-03-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../images/collection-03-mobil.webp    1x,
+                ../images/collection-03-mobil@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="../images/collection-03-mobil.webp" alt="product image" />
+          </picture>
+        </div>
+        <p class="product">Women's blouse Crimea</p>
+        <p class="price">4000 UAH</p>
+      </li>
+      <li class="collection-list-item">
+        <div class="product-card">
+          <picture class="product-image">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../images/collection-04-desktop-1440.webp    1x,
+                ../images/collection-04-desktop-1440@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../images/collection-04-desktop-1280.webp    1x,
+                ../images/collection-04-desktop-1280@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../images/collection-04-tablet.webp    1x,
+                ../images/collection-04-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../images/collection-04-mobil.webp    1x,
+                ../images/collection-04-mobil@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="../images/collection-04-mobil.webp" alt="product image" />
+          </picture>
+        </div>
+        <p class="product">Men's shirt Verkhovina</p>
+        <p class="price">3100 UAH</p>
+      </li>
+      <li class="collection-list-item">
+        <div class="product-card">
+          <picture class="product-image">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../images/collection-05-desktop-1440.webp    1x,
+                ../images/collection-05-desktop-1440@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../images/collection-05-desktop-1280.webp    1x,
+                ../images/collection-05-desktop-1280@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../images/collection-05-tablet.webp    1x,
+                ../images/collection-05-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../images/collection-05-mobil.webp    1x,
+                ../images/collection-05-mobil@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="../images/collection-05-mobil.webp" alt="product image" />
+          </picture>
+        </div>
+        <p class="product">Mountain men's shirt</p>
+        <p class="price">3300 UAH</p>
+      </li>
+      <li class="collection-list-item">
+        <div class="product-card">
+          <picture class="product-image">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ../images/collection-06-desktop-1440.webp    1x,
+                ../images/collection-06-desktop-1440@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../images/collection-06-desktop-1280.webp    1x,
+                ../images/collection-06-desktop-1280@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../images/collection-06-tablet.webp    1x,
+                ../images/collection-06-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../images/collection-06-mobil.webp    1x,
+                ../images/collection-06-mobil@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <img src="../images/collection-06-mobil.webp" alt="product image" />
+          </picture>
+        </div>
+        <p class="product">Men's shirt Yasen</p>
+        <p class="price">1700 UAH</p>
+      </li>
+    </ul>
   </div>
 </section>
 
+      
+      
+    </main>
+    
 
+    <!-- <section>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      Path to images as from index.html file
+      <img src="./img/javascript.svg" alt="" />
+    </section> -->
     
   </body>
 </html>
